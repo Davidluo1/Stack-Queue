@@ -9,13 +9,17 @@ class Node {
         string data;
         Node():next(nullptr),data(""){}
 };
+
+
 class Stack {
     public:
         Stack():head(nullptr),tail(nullptr){}
+
         bool isEmpty()
         {
             return tail == nullptr;
         }
+
         void pushStack(const string &data)
         {
             Node *newNode = new Node;
@@ -31,6 +35,7 @@ class Stack {
                 tail=newNode;
             }
         }
+
         void popStack()
         {
             Node *current = tail;
@@ -42,6 +47,7 @@ class Stack {
                 current = nullptr;
             }
         }
+
         void deleteAll()
         {
             Node *current = tail;
@@ -52,6 +58,7 @@ class Stack {
                 current = tail;
             }
         }
+
         void printStack()
         {
             Node *current = tail;
@@ -69,6 +76,7 @@ class Stack {
         Node *tail;
 };
 
+
 int main()
 {
     Stack myStack;
@@ -77,6 +85,7 @@ int main()
     vector<string> someString;
     
     cout << "Please enter the item you want to push to the stack, enter q to begin the process.\n";
+    
     while(run==true)
     {
         while(cin>>input)
