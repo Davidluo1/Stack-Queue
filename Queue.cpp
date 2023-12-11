@@ -83,6 +83,7 @@ int main()
     vector<string> someString;
     
     cout << "Please enter the items you want to save in the queue, enter q to start the process.\n";
+    
     while(function==true)
     {
         while(cin>>input)
@@ -105,6 +106,7 @@ int main()
         
         cout << "\nEnter d to dequeue an item, enter exist to exist the program\n";
         cout << "enter peek to see currene Queue, enter add to add more item to the queue.\n";
+        
         while(cin>>input)
         {
             if(input == "add")
