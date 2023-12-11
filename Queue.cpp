@@ -13,10 +13,12 @@ class Node {
 class Queue {
     public:
         Queue():head(nullptr),tail(nullptr){}
+
         bool isEmpty()
         {
             return head == nullptr;
         }
+
         void enqueue(const string &data)
         {
             Node *newNode = new Node;
@@ -33,6 +35,7 @@ class Queue {
                 tail = newNode;
             }
         }
+
         void dequeue()
         {
             Node *current = head;
@@ -43,6 +46,7 @@ class Queue {
                 cout << "dequeue " << item << endl;
             }
         }
+
         void print()
         {
             Node *current = head;
@@ -54,6 +58,7 @@ class Queue {
             }
             cout << "null\n";
         }
+
         void deleteAll()
         {
             Node *current = head;
@@ -68,6 +73,8 @@ class Queue {
         Node *head;
         Node *tail;
 };
+
+
 int main()
 {
     Queue q;
