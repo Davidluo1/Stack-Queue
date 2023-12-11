@@ -100,6 +100,7 @@ int main()
                 someString.push_back(input);
             }
         }
+        
         for(auto item: someString)
         {
             myStack.pushStack(item);
@@ -108,6 +109,7 @@ int main()
         
         cout << "\nEnter pop to pop an item, enter peek to see the current stack.\n";
         cout << "Enter add to add more item, enter exist to terminate the program.\n";
+        
         while(cin>>input)
         {
             if(input == "pop")
